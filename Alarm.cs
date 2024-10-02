@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Practice2
 {
-    internal class Alarm:IMessageWritter
-        
+    internal class Alarm: IMessageWritter
+
     {
+        /// khbjhkcbaskjdhcba
+
         private PoliceStation policeStation;
         private bool activated = false;
 

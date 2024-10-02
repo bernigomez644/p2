@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\P1-vehicle_example\\Practica2\\Practice2.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\Practica2\\Practica2\\Practice2.csproj",
       "projectName": "Practice2",
-      "projectPath": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\P1-vehicle_example\\Practica2\\Practice2.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\Practica2\\Practica2\\Practice2.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\P1-vehicle_example\\Practica2\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Progra\\tercero\\primer_cuatri\\paradigmas_de_la_programacion\\Practica2\\Practica2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
