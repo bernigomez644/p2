@@ -16,10 +16,14 @@ namespace Practice2
 
         public Scooter() : base(typeOfVehicle)
         {
-            //Values of atributes are set just when the instance is done if not needed before.
-            //isCarryingPassengers = false;
+            riding = false;
+        }
+
+        public void StartRide()
+        {
             SetSpeed(45.0f);
             riding = true;
+            Console.WriteLine(WriteMessage("start riding."));
         }
         public void StopRide()
         {

@@ -60,6 +60,9 @@ namespace Practice2
             //aunque no hace falta
             Scooter scooter1 = new Scooter();
             Console.WriteLine(scooter1.WriteMessage("Created"));
+            scooter1.StartRide();
+            scooter1.StopRide();
+
             Console.WriteLine("     ");
 
 

@@ -8,7 +8,7 @@ namespace Practice2
         public City City { get; set; }
         public string Name { get; private set;}
         private Alarm alarm;
-        public string? ilegal_car;
+        public string? ilegal_car { get; set; }
         public PoliceStation(string name)
         {
             alarm = new Alarm(this);

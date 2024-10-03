@@ -37,7 +37,7 @@ namespace Practice2
         {
             foreach (PoliceCar policeCar in policeStation.listOfPoliceCars)
             {
-                if (policeCar.isPatrolling)
+                if (policeCar.IsPatrolling)
                 {
                     policeCar.ilegal_car = plate; 
                 }

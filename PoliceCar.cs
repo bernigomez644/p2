@@ -2,18 +2,17 @@
 {
     class PoliceCar : VehicleWithPlate
     {
-        private const string typeOfVehicle = "Police Car"; 
-        public bool isPatrolling;
+        private const string typeOfVehicle = "Police Car";
+        public bool IsPatrolling { get; private set; }
         private SpeedRadar? speedRadar;
         private PoliceStation policeStation;
-        public string? ilegal_car;
-        public bool isChasing;
-        public string? TargetVehicleChasing { get; private set; }
+        public string? ilegal_car {get; set;}
+        private bool isChasing;
 
 
         public PoliceCar(string plate) : base(typeOfVehicle, plate)
         {
-            isPatrolling = false;
+            IsPatrolling = false;
             //speedRadar = new SpeedRadar(); // lo dejo comentado para que no siempre contenga un objeto radar 
         }
 
@@ -25,11 +24,11 @@
 
         public void UseRadar(Vehicle vehicle)
         {
-            if (speedRadar == null && isPatrolling)
+            if (speedRadar == null && IsPatrolling)
             {
                 Console.WriteLine(WriteMessage($"Is patrolling but has no radar"));
             }
-            else if (isPatrolling && speedRadar != null)
+            else if (IsPatrolling && speedRadar != null)
             {
                 speedRadar.TriggerRadar(vehicle);
                 (string meassurement,bool ilegal_velocity) = speedRadar.GetLastReading();
@@ -50,16 +49,11 @@
             }
         }
 
-        public bool IsPatrolling()
-        {
-            return isPatrolling;
-        }
-
         public void StartPatrolling()
         {
-            if (!isPatrolling)
+            if (!IsPatrolling)
             {
-                isPatrolling = true;
+                IsPatrolling = true;
                 Console.WriteLine(WriteMessage("started patrolling."));
             }
             else
@@ -70,9 +64,9 @@
 
         public void EndPatrolling()
         {
-            if (isPatrolling)
+            if (IsPatrolling)
             {
-                isPatrolling = false;
+                IsPatrolling = false;
                 Console.WriteLine(WriteMessage("stopped patrolling."));
             }
             else
