@@ -2,7 +2,7 @@
 
 namespace Practice2
 {
-    internal class PoliceStation
+    internal class PoliceStation: IMessageWritter
     {
         public List<PoliceCar> listOfPoliceCars = new List<PoliceCar>();
         public City City { get; set; }
