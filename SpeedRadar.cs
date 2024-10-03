@@ -34,7 +34,7 @@
             else
             {
                 trigger = false;
-                return (WriteMessage("Catched above legal speed."), trigger);
+                return (WriteMessage("Diving legally."), trigger);
             }
         }
 

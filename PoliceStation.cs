@@ -14,7 +14,7 @@ namespace Practice2
             alarm = new Alarm(this);
             Name = name;
         }
-        public void registerPoliceCar(PoliceCar policeCar)
+        public void RegisterPoliceCar(PoliceCar policeCar)
         {
             listOfPoliceCars.Add(policeCar);
             policeCar.SetStation(this);
@@ -34,7 +34,7 @@ namespace Practice2
 
         public override string ToString()
         {
-            return $"The Police Station {Name},located in {City.CityName}";
+            return $"The Police Station named {Name},located in {City.CityName}";
         }
 
         public string WriteMessage(string message)

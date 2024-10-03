@@ -30,13 +30,21 @@ namespace Practice2
         }
         public void RegisterTaxiLicense(Taxi taxi)
         {
-            RegisteredTaxis.Add(taxi);
-            taxi.City = this;
-            Console.WriteLine(WriteMessage($"Registered taxi with plate {taxi.GetPlate()}"));
+            if (RegisteredTaxis.Contains(taxi))
+            {
+                Console.WriteLine("This taxi already has a licence");
+            }
+            else 
+            {
+                RegisteredTaxis.Add(taxi);
+                taxi.City = this;
+                Console.WriteLine(WriteMessage($"Registered taxi with plate {taxi.GetPlate()}"));
+            }
         }
 
-        public void RemoveTaxiLicense(string plate)
+        public void RemoveTaxiLicense(Taxi taxi)
         {
+            string plate = taxi.GetPlate();
             Taxi? taxiToRemove = RegisteredTaxis.Find(taxi => taxi.GetPlate() == plate);
 
             if (taxiToRemove != null)
